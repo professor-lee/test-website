@@ -1,0 +1,106 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #fff;
+  background-color: #000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 全局光标样式设置 */
+/* 文本输入区域 */
+input[type="text"], input[type="password"], input[type="email"], input[type="number"],
+textarea, select {
+  cursor: url('/cursor/auto-text-inherit.png'), text;
+}
+
+/* 可调整大小的元素 */
+.resizable {
+  cursor: url('/cursor/nw-se-resize.png'), nwse-resize;
+}
+
+/* 可移动的元素 */
+.draggable, .move {
+  cursor: url('/cursor/move.png'), move;
+}
+
+/* 帮助提示 */
+.help {
+  cursor: url('/cursor/help.png'), help;
+}
+
+/* 等待状态 */
+.waiting, .loading {
+  cursor: url('/cursor/wait.png'), wait;
+}
+
+/* 禁止操作 */
+.disabled, [disabled] {
+  cursor: url('/cursor/not-allowed.png'), not-allowed;
+}
+
+/* 十字准星 */
+.crosshair {
+  cursor: url('/cursor/crosshair.png'), crosshair;
+}
+
+/* 进度状态 */
+.progress {
+  cursor: url('/cursor/progress.png'), progress;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+  cursor: url('/cursor/pointer.png'), pointer;
+}
+a:hover {
+  color: #fff;
+  cursor: url('/cursor/pointer.png'), pointer;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  cursor: url('/cursor/default.png'), default;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: url('/cursor/pointer.png'), pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+  background-color: #1a1a1a;
+  color: #fff;
+}
